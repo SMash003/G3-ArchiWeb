@@ -104,6 +104,45 @@ main>section{
   margin-bottom: 32px;
 }
 
+#ftrs-h{
+  border-left: 5px solid #FF900E;
+  padding-left: 21px;
+}
+
+.features-u{
+  gap: 140px;
+}
+
+.feature-card{
+  margin-bottom: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 30px 0px;
+  border-radius: 8px;
+}
+
+.feature-card .feature-title{
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#ex-badge{
+  padding: 45px 42px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: -92px;
+  margin-top: -120px;
+}
+#ex-yr{
+  font-size: 4rem;
+  font-weight: 700;
+}
+.featured-arc img{
+  width: 100%;
+}
+
+
 .facts-container{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -146,6 +185,7 @@ main>section{
 @media screen and (max-width: 576px) {
   .navbar,
   .nav-link,
+  .features-u,
   .teams{
     flex-direction: column;
   }
@@ -166,11 +206,16 @@ main>section{
     justify-items: center;
     gap: 50px;
   }
+  #ex-badge{
+    margin-top: 20px;
+    margin-left: 20px;
+  }
 }
 
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
-  .teams{
+  .teams,
+  .features-u{
     flex-direction: column;
   }
   .our-features{
@@ -180,6 +225,10 @@ main>section{
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
     justify-items: center;
+  }
+  #ex-badge{
+    margin-top: 20px;
+    margin-left: 20px;
   }
 }
 
